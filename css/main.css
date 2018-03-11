@@ -1,0 +1,100 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgba(12, 9, 9, 1);
+    /* transition: 0.1s ease; */
+}
+
+body {
+    background-image: url(/grain_tex.jpg);
+    background-blend-mode: soft-light;
+    background-size: 500px;
+    background-color: firebrick;
+}
+
+.bg {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.row {
+    border-bottom: solid 2px rgba(25,25,25,1);
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 0;
+    opacity: 0.9 !important;
+}
+
+.row:last-of-type {
+    border-bottom: none;
+    height: 100px;
+}
+
+.column-element {
+    flex-grow: 1;
+    min-width: 100px;
+    width: 25%;
+    padding: 0 20px 0 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1.6rem;
+    opacity: 1 !important;
+}
+
+.row h3 {
+    width: 50%;;
+    font-size: 2.5rem;
+    flex-grow: 2;
+    line-height: 2.6rem;
+    opacity: 1 !important;
+}
+
+h1 {
+    font-size: 8rem;
+    width: 50%;
+    line-height: inherit !important;
+    opacity: 1 !important;
+}
+
+.header {
+    color: white;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: solid 2px rgba(25,25,25,1);
+    opacity: 1 !important;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .column-element {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+
+}
