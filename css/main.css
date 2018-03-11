@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background-image: url(/grain_tex.jpg);
+    background-image: url(./grain_tex.jpg);
     background-blend-mode: soft-light;
     background-size: 500px;
     background-color: firebrick;
